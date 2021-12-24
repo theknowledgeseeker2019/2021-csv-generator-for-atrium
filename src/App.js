@@ -16,7 +16,7 @@ const App = () => {
     const firstName = 'Gift - '
     const [lastName, setLastName] = useState(''); 
     const [amount, setAmount] = useState(''); 
-    const [lastCampusID, setLastCampusID] = useState(10000000000);
+    const [lastCampusID, setLastCampusID] = useState(1000000000);
     const [qty, setQty] = useState('');
     const [expDate, setExpDate] = useState('');
 
@@ -125,10 +125,11 @@ const App = () => {
                 </div>
                 <div className="formRow">
                     <div className="inputGroup">
-                        <label>Last Campus ID</label>
+                        <label>Last Campus ID (10 digits)</label>
                         <input 
                             type="text" 
                             name="lastCampusId"
+                            pattern="\d{10}"
                             value={lastCampusID}
                             onChange={(e) => setLastCampusID(e.target.value)}
                         />

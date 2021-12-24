@@ -39,7 +39,7 @@ body{
 .inputGroup{
     display: flex;
     flex-direction: column;
-    margin-right: 30px;
+    margin-right: 25px;
 }
 
 .inputGroup label{
@@ -50,7 +50,7 @@ body{
 .inputGroup input{
     padding: 10px;
     font-size: 22px;
-    width: 300px;
+    width: 290px;
     border-radius: 10px;
     border: 2px solid #ccc;
 }
@@ -75,7 +75,7 @@ textarea{
 }
 
 
-@media only screen and (max-width: 1800px) {
+@media only screen and (max-width: 1730px) {
     body{
         background-repeat:repeat;
     }
